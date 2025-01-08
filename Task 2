@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Studentgradecalculator
+{
+    public static void main()
+    {
+        Scanner Sc=new Scanner(System.in);
+        System.out.println("Enter English marks");
+        int English=Sc.nextInt();
+        System.out.println("Enter Chemistry marks");
+        int Chemistry=Sc.nextInt();
+        System.out.println("Enter Math marks");
+        int Maths=Sc.nextInt();
+        System.out.println("Enter Physics marks");
+        int Physics=Sc.nextInt();
+        System.out.println("Enter Biology marks");
+        int Biology=Sc.nextInt();
+        int totalmarks=(English+Chemistry+Physics+Maths+Biology);
+        double totalpercentage=(double)totalmarks/500 *100;
+        System.out.println("TotalPercentage= " + totalpercentage + "%");
+        System.out.println("TotalMarks= "+totalmarks);
+        if(totalpercentage<=100 && totalpercentage<=80)
+        {
+            System.out.println("grade=A");
+        }
+        else if(totalpercentage<=80 && totalpercentage>=60)
+        {
+            System.out.println("Grade=B");
+        }
+        else if(totalpercentage<=60 && totalpercentage>=40)
+        {
+            System.out.println("Grade=C");
+        }
+        else
+        {
+            System.out.println("Grade=D");
+        }
+    }
+}
+        
+        
+        
+    
+        
+        
+        
+        
